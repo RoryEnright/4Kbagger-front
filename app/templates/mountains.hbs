@@ -1,0 +1,19 @@
+{{!-- <h2>Mountains</h2> --}}
+
+{{!-- {{#each model as |mountain|}}
+
+  {{shopping-mountain/card mountain=mountain}}
+
+{{/each}}
+
+Want to shop? {{#link-to 'index'}}Home {{/link-to}} --}}
+
+<h2>Mountains</h2>
+
+<ul>
+{{#each model as |mountain|}}
+
+  <li>{{#link-to 'mountain' mountain.id}}{{mountain.name}} {{mountain.height}} ft{{/link-to}}</li>
+
+{{/each}}
+</ul>
