@@ -13,6 +13,7 @@ Router.map(function () {
   this.route('mountains');
   this.route('mountain', { path: 'mountains/:mountain_id'});
   this.route('hikes');
+  this.route('hike', {path: 'hikes/:hike_id'});
 });
 
 export default Router;

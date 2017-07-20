@@ -4,7 +4,7 @@
 {{#each model as |hike|}}
 
   {{hike.when}} {{hike.trail}} {{hike.duration}} {{hike.note}}
-
+  <button {{action 'deleteHike'}}>Delete</button>
   {{!-- <li>{{#link-to 'hike' hike.id}}{{hike.name}} {{hike.height}} ft{{/link-to}}</li> --}}
 
 {{/each}}
