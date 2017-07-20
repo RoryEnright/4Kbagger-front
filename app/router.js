@@ -12,6 +12,7 @@ Router.map(function () {
   this.route('users');
   this.route('mountains');
   this.route('mountain', { path: 'mountains/:mountain_id'});
+  this.route('hikes');
 });
 
 export default Router;
