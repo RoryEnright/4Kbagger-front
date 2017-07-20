@@ -3,11 +3,15 @@
 
 <ul>
 {{#each model.hikes as |hike|}}
+{{mountain-hike
+  hike=hike
+  deleteHike='deleteHike'}}
 
-  <li>{{hike.when}}
+  {{!-- <li>{{hike.when}}
 {{hike.trail}}
 {{hike.duration}}
-{{hike.note}}</li>
+{{hike.note}}<br>
+<button {{action 'deleteHike' this}}>delete</button></li> --}}
 
 {{/each}}
 </ul>
