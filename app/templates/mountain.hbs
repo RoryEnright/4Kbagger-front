@@ -1,3 +1,13 @@
 <h2>{{model.name}} {{model.height}} ft</h2>
-{{#link-to 'hikes'}}Your Hikes{{/link-to}}
-{{model.hikes}}
+<h3>Hikes</h3>
+
+<ul>
+{{#each model.hikes as |hike|}}
+
+  <li>{{hike.when}}
+{{hike.trail}}
+{{hike.duration}}
+{{hike.note}}</li>
+
+{{/each}}
+</ul>

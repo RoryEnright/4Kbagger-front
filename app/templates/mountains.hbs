@@ -3,7 +3,7 @@
 <ul>
 {{#each model as |mountain|}}
 
-  <li>{{#link-to 'mountain' mountain.id}}{{mountain.name}} {{mountain.height}} ft{{/link-to}}</li>
+  <li>{{#link-to 'mountain' mountain}}{{mountain.name}} {{mountain.height}} ft{{/link-to}}</li>
 
 {{/each}}
 </ul>
