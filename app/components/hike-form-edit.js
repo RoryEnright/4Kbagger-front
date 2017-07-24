@@ -33,11 +33,18 @@ export default Ember.Component.extend({
   //   mountain_id: 3
   // },
   actions: {
-  createHike () {
+  updateHike () {
     console.log(this.get('hike'));
-    this.get('store').createRecord('hike', this.get('hike')).save().then(() => {
-      console.log('saved?')
-    })
+    this.get('store').findRecord('hike', this.get('id')).then(
+        (record) => {
+          console.log(record)
+          record.set('when', this.get('hike').when);
+          record.set('trail', this.get('hike').trail);
+          record.set('duration', this.get('hike').duration);
+          record.set('note', this.get('hike').note);
+          record.save();
+        }
+      )
     // .then(
       // () => {
       //   this.get('router').transitionTo('mountains')
