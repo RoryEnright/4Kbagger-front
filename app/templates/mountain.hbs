@@ -3,15 +3,14 @@
 
 <ul>
 {{#each model.hikes as |hike|}}
+{{!-- {{#if hike.id}} --}}
 {{mountain-hike
+  id=hike.id
   hike=hike
-  deleteHike='deleteHike'}}
-
-  {{!-- <li>{{hike.when}}
-{{hike.trail}}
-{{hike.duration}}
-{{hike.note}}<br>
-<button {{action 'deleteHike' this}}>delete</button></li> --}}
-
+  deleteHike='deleteHike'
+  createHike='createHike'}}
+{{!-- {{/if}} --}}
 {{/each}}
 </ul>
+
+{{#link-to 'hike-add' model.id}}<button>Add a Hike</button>{{/link-to}}

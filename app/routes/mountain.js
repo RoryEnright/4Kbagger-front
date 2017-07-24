@@ -10,8 +10,10 @@ export default Ember.Route.extend({
       console.log('mountain')
     hike.destroyRecord();
    },
-  // deleteHike: function() {
-  //   this.get('model.hike').destroyRecord();
-  // }
+   createHike (hike) {
+     console.log('trying to create hike', hike)
+     let hikeRecord = this.get('store').createRecord('hike', hike);
+     hikeRecord.save();
+   },
   }
 });

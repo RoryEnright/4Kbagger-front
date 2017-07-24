@@ -14,6 +14,8 @@ Router.map(function () {
   this.route('mountain', { path: 'mountains/:mountain_id'}, function() {
     this.route('hikes');
   });
+  this.route('hike-edit');
+  this.route('hike-add', { path: 'hikes/add/:id'});
 });
 
 export default Router;
