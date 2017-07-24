@@ -4,4 +4,5 @@
 {{hike.trail}}
 {{hike.duration}}
 {{hike.note}}<br>
-<button {{action "deleteHike"}}>delete</button></li>
+<button {{action "deleteHike"}}>Delete</button></li>
+{{#link-to 'hike-edit' hike.id}}<button>Edit</button>{{/link-to}}
