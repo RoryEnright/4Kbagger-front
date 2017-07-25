@@ -30,17 +30,17 @@ forking and cloning, a simple bundle install should take care of any dependencie
 
 ## User Stories
 Auth:
-As a user I want to sign up for an account.
-As a user I want to log in to a personal account.
-As a user I want to sign out of my account.
-As a user I want an option to change my password.
+-  As a user I want to sign up for an account.
+-  As a user I want to log in to a personal account.
+-  As a user I want to sign out of my account.
+-  As a user I want an option to change my password.
 
 App:
-As a user I want to select a mountain with given elevation.
-As a user I want to input data about my hike. (Trails used, time to complete, notes, date.)
-As a user I want to update hiking data.
-As a user I want to delete hiking data.
-As a user I want to be able to retrieve this data at a later date.
+-  As a user I want to select a mountain with given elevation.
+-  As a user I want to input data about my hike. (Trails used, time to complete, notes, date.)
+-  As a user I want to update hiking data.
+-  As a user I want to delete hiking data.
+-  As a user I want to be able to retrieve this data at a later date.
 
 ## Approach/Process
 A few years ago I would go hiking all the time.  Eventually I heard about a list called the 48 4000 footers and knew I
