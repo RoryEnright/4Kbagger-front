@@ -1,8 +1,8 @@
 
 
-<li>{{hike.when}}
-{{hike.trail}}
-{{hike.duration}}
-{{hike.note}}<br>
+<li>Date: {{hike.when}}<br>
+   Trails: {{hike.trail}}<br>
+   Duration: {{hike.duration}} hours<br>
+   Notes: {{hike.note}}<br>
 <button {{action "deleteHike"}}>Delete</button></li>
 {{#link-to 'hike-edit' hike.id}}<button>Edit</button>{{/link-to}}

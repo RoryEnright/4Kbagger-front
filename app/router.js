@@ -9,7 +9,6 @@ Router.map(function () {
   this.route('sign-up');
   this.route('sign-in');
   this.route('change-password');
-  this.route('users');
   this.route('mountains');
   this.route('mountain', { path: 'mountains/:mountain_id'}, function() {
     this.route('hikes');
