@@ -5,6 +5,7 @@ export default Ember.Component.extend({
   auth: Ember.inject.service(),
   store: Ember.inject.service(),
   router: Ember.inject.service('-routing'),
+  flashMessages: Ember.inject.service(),
 
   when: '',
   trail: '',
@@ -33,6 +34,7 @@ export default Ember.Component.extend({
           console.log('saved')
           this.get('router').transitionTo('mountains')
         })
+        .then(() => this.get('flashMessages').success('Hike has been added!'))
         .catch((error) => {
           this.get('flashMessages')
             .danger('Problem adding your hike. Please try again.');
