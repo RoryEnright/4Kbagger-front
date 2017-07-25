@@ -1,2 +1,33 @@
 @import 'bootstrap';
 @import 'bootstrap/theme';
+
+.title {
+  font: white
+}
+
+body {
+    background-image: url("http://i.imgur.com/baedOUh.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    background-attachment: fixed;
+    background-color: black;
+}
+
+ul {
+  background-color: rgba(253, 179, 83, 0.8);
+  font-weight: bold;
+  color: black
+}
+
+#navigation {
+  background-color: rgb(253, 179, 83);
+}
+
+.navbar-brand {
+  background-color: rgba(253, 179, 83, 0.7);
+}
+
+#nav-whole {
+  background-color: rgba(253, 179, 83, 0.7);
+}

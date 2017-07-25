@@ -1,3 +1,23 @@
 <h2>{{model.name}} {{model.height}} ft</h2>
+<<<<<<< HEAD
 {{#link-to 'hikes'}}Your Hikes{{/link-to}}
 {{!-- {{model.hikes}} --}}
+=======
+<h3>Hikes</h3>
+
+<ul>
+{{#each model.hikes as |hike|}}
+{{!-- {{#if hike.id}} --}}
+{{mountain-hike
+  id=hike.id
+  hike=hike
+  updateHike='updateHike'
+  deleteHike='deleteHike'
+  createHike='createHike'}}
+{{!-- {{/if}} --}}
+
+{{/each}}
+</ul>
+
+{{#link-to 'hike-add' model.id}}<button>Add a Hike</button>{{/link-to}}
+>>>>>>> cleanup
